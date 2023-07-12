@@ -36,6 +36,7 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+fir-angular-1e9db-firebase-adminsdk-uq8dp-bdd9e8781b.json
 
 # System files
 .DS_Store

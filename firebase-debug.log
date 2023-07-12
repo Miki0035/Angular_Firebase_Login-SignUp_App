@@ -1,0 +1,88 @@
+[debug] [2022-11-24T13:46:29.865Z] ----------------------------------------------------------------------
+[debug] [2022-11-24T13:46:29.867Z] Command:       /home/mikiyas/.nvm/versions/node/v14.20.0/bin/node /home/mikiyas/.nvm/versions/node/v14.20.0/bin/firebase init functions
+[debug] [2022-11-24T13:46:29.868Z] CLI Version:   11.16.0
+[debug] [2022-11-24T13:46:29.868Z] Platform:      linux
+[debug] [2022-11-24T13:46:29.868Z] Node Version:  v14.20.0
+[debug] [2022-11-24T13:46:29.868Z] Time:          Thu Nov 24 2022 16:46:29 GMT+0300 (East Africa Time)
+[debug] [2022-11-24T13:46:29.868Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-24T13:46:29.929Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-24T13:46:29.930Z] > authorizing via signed-in user (mknewkebede@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /media/mikiyas/5678B0CC78B0ABDD/Angular/FireBaseAngular
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-24T13:46:29.934Z] Using project from CLI flag: fir-angular-1e9db
+[debug] [2022-11-24T13:46:29.937Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-angular-1e9db [none]
+[debug] [2022-11-24T13:46:30.810Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-angular-1e9db 200
+[debug] [2022-11-24T13:46:30.812Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-angular-1e9db {"projectId":"fir-angular-1e9db","projectNumber":"305791986217","displayName":"Firebase-Angular","name":"projects/fir-angular-1e9db","resources":{"hostingSite":"fir-angular-1e9db","storageBucket":"fir-angular-1e9db.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_8a80491a-cca3-43a2-85e8-a2c4c03a9ffb"}
+[info] i  Using project fir-angular-1e9db (Firebase-Angular) 
+[info] 
+=== Functions Setup
+[debug] [2022-11-24T13:46:30.827Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-24T13:46:30.827Z] > authorizing via signed-in user (mknewkebede@gmail.com)
+[debug] [2022-11-24T13:46:30.827Z] [iam] checking project fir-angular-1e9db for permissions ["firebase.projects.get"]
+[debug] [2022-11-24T13:46:30.829Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-angular-1e9db:testIamPermissions [none]
+[debug] [2022-11-24T13:46:30.829Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-angular-1e9db:testIamPermissions x-goog-quota-user=projects/fir-angular-1e9db
+[debug] [2022-11-24T13:46:30.829Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-angular-1e9db:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-24T13:46:32.889Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-angular-1e9db:testIamPermissions 200
+[debug] [2022-11-24T13:46:32.890Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-angular-1e9db:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-24T13:46:32.893Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-11-24T13:46:32.893Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/fir-angular-1e9db
+[debug] [2022-11-24T13:46:32.898Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-11-24T13:46:32.899Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/fir-angular-1e9db
+[debug] [2022-11-24T13:46:35.094Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/runtimeconfig.googleapis.com 200
+[debug] [2022-11-24T13:46:35.095Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-11-24T13:46:35.180Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com 200
+[debug] [2022-11-24T13:46:35.180Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2022-11-24T13:46:35.182Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2022-11-24T13:46:35.182Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/fir-angular-1e9db
+[debug] [2022-11-24T13:46:37.729Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2022-11-24T13:46:37.730Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2022-11-24T13:46:47.736Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-11-24T13:46:47.738Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/fir-angular-1e9db
+[debug] [2022-11-24T13:46:49.888Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com 200
+[debug] [2022-11-24T13:46:49.888Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/fir-angular-1e9db/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/.eslintrc.js 
+[info] ✔  Wrote functions/index.js 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] ✔  Firebase initialization complete! 
+[debug] [2022-11-24T13:50:36.247Z] Error: Timed out.
+    at Timeout.<anonymous> (/home/mikiyas/.nvm/versions/node/v14.20.0/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+[error] 
+[error] Error: An unexpected error has occurred.
