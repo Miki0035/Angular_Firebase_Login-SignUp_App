@@ -18,7 +18,7 @@ export class AuthService {
 
   logout() {
     this.afAuth.signOut();
-    this.router.navigateByUrl('');
+    this.router.navigateByUrl(' ');
   }
 
   isLoggedIn() {
@@ -48,7 +48,7 @@ export class AuthService {
   }
 
   async routeOnLogin() {
-    this.afAuth.authState.subscribe(user => this.user =user);
+    this.afAuth.authState.subscribe(user => this.user = user);
     const token = await this.user.getIdTokenResult();
 
     if(token.claims.admin) {

@@ -47,7 +47,7 @@ const redirectLoggedInToProfileOrUsers = () =>
 
 const routes: Routes = [
   { 
-    path:'', 
+    path:' ', 
     component: LoginComponent, 
     canActivate: [AngularFireAuthGuard],
     data: {authGuardPipe: redirectLoggedInToProfileOrUsers}, 
